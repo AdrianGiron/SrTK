@@ -8,42 +8,38 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #ffffff;
-            color: #4B0082;
+            color: #333333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #4B0082;
-            color: #ffffff;
-            padding: 10px 0;
+            background-color: #ffffff;
+            color: #333333;
+            padding: 20px 0;
             text-align: center;
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
         }
-        h1, h2, h3 {
-            border-bottom: 2px solid #4B0082;
+        h1 {
+            color: #0066cc;
+        }
+        h2 {
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
             padding-bottom: 5px;
         }
-        .bio, .stats, .palmares, .videos {
-            margin: 20px 0;
+        p {
+            line-height: 1.6;
         }
-        .photo {
-            text-align: center;
-        }
-        .photo img {
+        img {
             max-width: 100%;
             height: auto;
         }
-        .videos iframe {
-            width: 100%;
-            height: 315px;
-            margin-bottom: 20px;
-        }
         footer {
-            background-color: #4B0082;
+            background-color: #0066cc;
             color: #ffffff;
             text-align: center;
             padding: 10px 0;
@@ -51,43 +47,42 @@
             width: 100%;
             bottom: 0;
         }
+        .real-madrid-logo {
+            max-width: 200px;
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Toni Kroos</h1>
-            <p>Pagina dedicada por Adrián Girón Valero</p>
+            <p>Página dedicada por Adrián Girón Valero</p>
         </div>
     </header>
     <div class="container">
         <section class="bio">
             <h2>Biografía</h2>
             <p>Toni Kroos (nacido el 4 de enero de 1990 en Greifswald, Alemania) es un futbolista profesional alemán que juega como centrocampista en el Real Madrid Club de Fútbol y en la selección de Alemania. Conocido por su visión de juego, precisión en los pases y habilidad en los tiros a larga distancia, Kroos es considerado uno de los mejores centrocampistas de su generación.</p>
+            <p>En mayo de 2024, Toni Kroos anunció su retirada del fútbol profesional después de una exitosa carrera de más de 15 años. Durante su tiempo en el Real Madrid, Kroos ganó numerosos títulos, incluyendo múltiples Ligas de Campeones de la UEFA y títulos de La Liga.</p>
         </section>
-        <section class="stats">
-            <h2>Estadísticas</h2>
-            <p>Hasta la fecha, Toni Kroos ha jugado más de 300 partidos con el Real Madrid, anotando más de 20 goles y asistiendo en más de 50 ocasiones. Con la selección alemana, ha disputado más de 100 partidos y ha sido una pieza clave en los torneos internacionales.</p>
-        </section>
-        <section class="palmares">
-            <h2>Palmarés</h2>
-            <ul>
-                <li>4 Ligas de Campeones de la UEFA</li>
-                <li>3 Supercopas de la UEFA</li>
-                <li>5 Mundiales de Clubes</li>
-                <li>2 Ligas Españolas</li>
-                <li>3 Supercopas de España</li>
-                <li>1 Copa del Mundo (2014) con la selección alemana</li>
-            </ul>
-        </section>
-        <section class="photo">
+        <section class="photos">
             <h2>Fotos</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Liver-RM_%281%29_%28cropped%29.jpg" alt="Toni Kroos">
+            <div class="photo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" alt="Real Madrid Logo" class="real-madrid-logo">
+            </div>
+            <div class="photo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Toni_Kroos_2018.jpg/1200px-Toni_Kroos_2018.jpg" alt="Toni Kroos">
+            </div>
+            <div class="photo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Toni_Kroos_training_with_Real_Madrid_2018.jpg/1200px-Toni_Kroos_training_with_Real_Madrid_2018.jpg" alt="Toni Kroos Training">
+            </div>
         </section>
         <section class="videos">
             <h2>Vídeos</h2>
-            <iframe src="https://www.youtube.com/embed/6uNAAztLX9A" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/N8aW4ZsqGpg" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6uNAAztLX9A" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N8aW4ZsqGpg" frameborder="0" allowfullscreen></iframe>
         </section>
     </div>
     <footer>
